@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "projects": {
+    "jk-comp": {
+      "projectType": "application",
+      "root": "apps/jk-comp",
+      "sourceRoot": "apps/jk-comp/src",
+      "prefix": "jan-krueger.eu",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/jk-comp",
+            "index": "apps/jk-comp/src/index.html",
+            "main": "apps/jk-comp/src/main.ts",
+            "polyfills": "apps/jk-comp/src/polyfills.ts",
+            "tsConfig": "apps/jk-comp/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/jk-comp/src/favicon.ico",
+              "apps/jk-comp/src/assets"
+            ],
+            "styles": ["apps/jk-comp/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/jk-comp/src/environments/environment.ts",
+                  "with": "apps/jk-comp/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "jk-comp:build:production"
+            },
+            "development": {
+              "browserTarget": "jk-comp:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "jk-comp:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/jk-comp/src/**/*.ts",
+              "apps/jk-comp/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/jk-comp"],
+          "options": {
+            "jestConfig": "apps/jk-comp/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "jk-comp-e2e": {
+      "root": "apps/jk-comp-e2e",
+      "sourceRoot": "apps/jk-comp-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/jk-comp-e2e/cypress.json",
+            "devServerTarget": "jk-comp:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "jk-comp:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/jk-comp-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["jk-comp"]
+    }
+  }
+}

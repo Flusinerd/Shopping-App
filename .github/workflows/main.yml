@@ -32,19 +32,19 @@ jobs:
       - run: yarn install
         name: 'Install dependencies'
       
-      - uses: mansagroup/nrwl-nx-action@v2
+      - uses: mansagroup/nrwl-nx-action@v2.0.6
         name: Lint affected
         with:
           targets: lint
           parallel: 'true'
           
-      - uses: mansagroup/nrwl-nx-action@v2
+      - uses: mansagroup/nrwl-nx-action@v2.0.6
         name: Build affected
         with:
           targets: build
           parallel: 'true'
           
-      - uses: mansagroup/nrwl-nx-action@v2
+      - uses: mansagroup/nrwl-nx-action@v2.0.6
         name: Deploy affected
         if: github.ref == 'refs/heads/main'
         with:

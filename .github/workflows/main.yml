@@ -94,8 +94,8 @@ jobs:
       - name: Save build output
         uses: actions/upload-artifact@v2
         with:
-          name: packages
-          path: dist/packages
+          name: build_output
+          path: dist
 
   # Test affected
   test:
@@ -146,8 +146,8 @@ jobs:
         continue-on-error: true
         uses: actions/download-artifact@v2
         with:
-          name: packages
-          path: dist/packages
+          name: build_output
+          path: dist
       
       - uses: mansagroup/nrwl-nx-action@v2.1.0
         name: Lint affected

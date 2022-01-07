@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@jk/components": ["libs/jk-comps/src/index.ts"],
+      "@jk/components/button": ["libs/jk-comps/button/src/index.ts"],
+      "@jk/components/input": ["libs/jk-comps/input/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

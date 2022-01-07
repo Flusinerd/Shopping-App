@@ -1,6 +1,58 @@
 {
   "version": 1,
   "projects": {
+    "einkauf-api": {
+      "root": "apps/einkauf-api",
+      "sourceRoot": "apps/einkauf-api/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/einkauf-api",
+            "main": "apps/einkauf-api/src/main.ts",
+            "tsConfig": "apps/einkauf-api/tsconfig.app.json",
+            "assets": ["apps/einkauf-api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/einkauf-api/src/environments/environment.ts",
+                  "with": "apps/einkauf-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "einkauf-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/einkauf-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/einkauf-api"],
+          "options": {
+            "jestConfig": "apps/einkauf-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": ["einkauf", "nest"]
+    },
     "jk-comp": {
       "projectType": "application",
       "root": "apps/jk-comp",
@@ -122,6 +174,111 @@
       },
       "tags": [],
       "implicitDependencies": ["jk-comp"]
+    },
+    "jk-comps": {
+      "projectType": "library",
+      "root": "libs/jk-comps",
+      "sourceRoot": "libs/jk-comps/src",
+      "prefix": "jk",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": ["dist/libs/jk-comps"],
+          "options": {
+            "project": "libs/jk-comps/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/jk-comps/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/jk-comps/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/jk-comps"],
+          "options": {
+            "jestConfig": "libs/jk-comps/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/jk-comps/src/**/*.ts",
+              "libs/jk-comps/src/**/*.html",
+              "libs/jk-comps/button/**/*.ts",
+              "libs/jk-comps/button/**/*.html",
+              "libs/jk-comps/input/**/*.ts",
+              "libs/jk-comps/input/**/*.html"
+            ]
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/jk-comps/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "outputPath": "dist/storybook/jk-comps",
+            "config": {
+              "configFolder": "libs/jk-comps/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      },
+      "tags": []
+    },
+    "jk-comps-e2e": {
+      "root": "apps/jk-comps-e2e",
+      "sourceRoot": "apps/jk-comps-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/jk-comps-e2e/cypress.json",
+            "devServerTarget": "jk-comps:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "jk-comps:storybook:ci"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/jk-comps-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["jk-comps"]
     }
   }
 }

@@ -30,7 +30,7 @@ jobs:
         name: 'Install dependencies'
       
       - uses: mansagroup/nrwl-nx-action@v2.1.0
-        name: Lint affected
+        name: Lint workspace
         with:
           targets: lint
           parallel: 'true'
@@ -82,7 +82,7 @@ jobs:
         name: 'Install dependencies'
       
       - uses: mansagroup/nrwl-nx-action@v2.1.0
-        name: Lint affected
+        name: Build affected
         with:
           targets: build
           args: --configuration=production
@@ -116,7 +116,7 @@ jobs:
         name: 'Install dependencies'
       
       - uses: mansagroup/nrwl-nx-action@v2.1.0
-        name: Lint affected
+        name: Test affected
         with:
           targets: test
           parallel: 'true'
@@ -150,7 +150,7 @@ jobs:
           path: dist
       
       - uses: mansagroup/nrwl-nx-action@v2.1.0
-        name: Lint affected
+        name: Deploy affected
         with:
           targets: deploy
           parallel: 'true'

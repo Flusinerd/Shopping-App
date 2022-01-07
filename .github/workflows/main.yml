@@ -1,0 +1,54 @@
+# This is a basic workflow to help you get started with Actions
+
+name: PR Main
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        name: 'Checkout'
+      
+      - uses: actions/setup-node@v2
+        name: 'Setup Node'
+        with:
+          node-version: 'lts'
+          cache: 'yarn'
+          
+      - run: yarn install
+        name: 'Install dependencies'
+      
+      - uses: mansagroup/nrwl-nx-action@v2
+        name: Lint affected
+        with:
+          targets: lint
+          parallel: 'true'
+          
+      - uses: mansagroup/nrwl-nx-action@v2
+        name: Build affected
+        with:
+          targets: build
+          parallel: 'true'
+          
+      - uses: mansagroup/nrwl-nx-action@v2
+        name: Deploy affected
+        if: github.ref == 'refs/heads/main'
+        with:
+          targets: deploy
+          parallel: 'true'
+          
+        

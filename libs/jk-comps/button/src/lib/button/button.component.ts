@@ -1,14 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'jan-krueger.eu-button',
+  selector: 'jk-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })
-export class ButtonComponent implements OnInit {
-  @Input() isActive: boolean;
-
-  constructor() {}
-
-  ngOnInit(): void {}
+export class ButtonComponent {
+  @Input() isActive?: boolean;
 }

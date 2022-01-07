@@ -128,7 +128,7 @@
           }
         }
       },
-      "tags": []
+      "tags": ["angular", "comps", "libs"]
     },
     "jk-comps-e2e": {
       "root": "apps/jk-comps-e2e",
@@ -155,7 +155,7 @@
           }
         }
       },
-      "tags": [],
+      "tags": ["angular", "comps", "e2e"],
       "implicitDependencies": ["jk-comps"]
     }
   }

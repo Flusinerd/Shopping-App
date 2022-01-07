@@ -1,11 +1,11 @@
 {
-  "npmScope": "jan-krueger.eu",
+  "npmScope": "jankrue",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
+    "packageManager": "yarn"
   },
   "implicitDependencies": {
     "package.json": {

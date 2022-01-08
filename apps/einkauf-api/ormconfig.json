@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "node1.jan-krueger.eu",
+  "port": 5432,
+  "username": "einkaufsliste",
+  "password": "8FBcEQqQDXrvjs8mnBc5M2zLtg9QLyEg",
+  "database": "einkaufsliste",
+  "entities": ["apps/einkauf-api/src/**/*.entity.ts"],
+  "migrations": ["apps/einkauf-api/src/migration/*.{ts, js}"],
+  "cli": {
+    "migrationsDir": "apps/einkauf-api/src/migration"
+  }
+}

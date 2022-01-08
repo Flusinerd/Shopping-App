@@ -1,4 +1,6 @@
+import { TypeOrmTestingModule } from '@jk/typeorm-testing-nest';
 import { Test, TestingModule } from '@nestjs/testing';
+import { UserEntity } from './entities/user.entity';
 import { UsersService } from './users.service';
 
 describe('UsersService', () => {
@@ -7,6 +9,7 @@ describe('UsersService', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [UsersService],
+      imports: [...TypeOrmTestingModule([UserEntity])],
     }).compile();
 
     service = module.get<UsersService>(UsersService);

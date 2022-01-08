@@ -45,9 +45,36 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/apps/einkauf-api"],
+          "dependsOn": [
+            {
+              "target": "setup-test-environment",
+              "projects": "self"
+            }
+          ],
           "options": {
             "jestConfig": "apps/einkauf-api/jest.config.js",
             "passWithNoTests": true
+          },
+          "configurations": {
+            "watch": {
+              "watch": true
+            }
+          }
+        },
+        "setup-test-environment": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "parallel": false,
+            "commands": [
+              "cd tools && docker-compose up -f docker-compose.testing.yml -d "
+            ]
+          },
+          "configurations": {
+            "watch": {
+              "commands": [
+                "cd tools && docker-compose -f docker-compose.testing.yml up -d "
+              ]
+            }
           }
         }
       },
@@ -157,6 +184,29 @@
       },
       "tags": ["angular", "comps", "e2e"],
       "implicitDependencies": ["jk-comps"]
+    },
+    "typeorm-testing-nest": {
+      "root": "libs/typeorm-testing-nest",
+      "sourceRoot": "libs/typeorm-testing-nest/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/typeorm-testing-nest/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/typeorm-testing-nest"],
+          "options": {
+            "jestConfig": "libs/typeorm-testing-nest/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
     }
   }
 }

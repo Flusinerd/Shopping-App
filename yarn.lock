@@ -1834,7 +1834,7 @@
     jest-util "^27.4.2"
     slash "^3.0.0"
 
-"@jest/core@^27.2.3", "@jest/core@^27.4.7":
+"@jest/core@^27.4.7":
   version "27.4.7"
   resolved "https://registry.yarnpkg.com/@jest/core/-/core-27.4.7.tgz#84eabdf42a25f1fa138272ed229bcf0a1b5e6913"
   integrity sha512-n181PurSJkVMS+kClIFSX/LLvw9ExSb+4IMtD6YnfxZVerw9ANYtW0bPrm0MJu2pfe9SY9FJ9FtQ+MdZkrZwjg==
@@ -3889,10 +3889,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@27.0.2":
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.2.tgz#ac383c4d4aaddd29bbf2b916d8d105c304a5fcd7"
-  integrity sha512-4dRxkS/AFX0c5XW6IPMNOydLn2tEhNhJV7DnYK+0bjoJZ+QTmfucBlihX7aoEsh/ocYtkLC73UbnBXBXIxsULA==
+"@types/jest@27.4.0":
+  version "27.4.0"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.4.0.tgz#037ab8b872067cae842a320841693080f9cb84ed"
+  integrity sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==
   dependencies:
     jest-diff "^27.0.0"
     pretty-format "^27.0.0"
@@ -10325,7 +10325,7 @@ jest-circus@^27.2.2, jest-circus@^27.4.6:
     stack-utils "^2.0.3"
     throat "^6.0.1"
 
-jest-cli@^27.2.3:
+jest-cli@^27.4.7:
   version "27.4.7"
   resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-27.4.7.tgz#d00e759e55d77b3bcfea0715f527c394ca314e5a"
   integrity sha512-zREYhvjjqe1KsGV15mdnxjThKNDgza1fhDT+iUsXWLCq3sxe9w5xnvyctcYVT5PcdLSjv7Y5dCwTS3FCF1tiuw==
@@ -10806,14 +10806,14 @@ jest-worker@^27.2.2, jest-worker@^27.4.1, jest-worker@^27.4.6:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@27.2.3:
-  version "27.2.3"
-  resolved "https://registry.yarnpkg.com/jest/-/jest-27.2.3.tgz#9c2af9ce874a3eb202f83d92fbc1cc61ccc73248"
-  integrity sha512-r4ggA29J5xUg93DpvbsX+AXlFMWE3hZ5Y6BfgTl8PJvWelVezNPkmrsixuGoDBTHTCwScRSH0O4wsoeUgLie2w==
+jest@27.4.7:
+  version "27.4.7"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-27.4.7.tgz#87f74b9026a1592f2da05b4d258e57505f28eca4"
+  integrity sha512-8heYvsx7nV/m8m24Vk26Y87g73Ba6ueUd0MWed/NXMhSZIm62U/llVbS0PJe1SHunbyXjJ/BqG1z9bFjGUIvTg==
   dependencies:
-    "@jest/core" "^27.2.3"
+    "@jest/core" "^27.4.7"
     import-local "^3.0.2"
-    jest-cli "^27.2.3"
+    jest-cli "^27.4.7"
 
 js-string-escape@^1.0.1:
   version "1.0.1"

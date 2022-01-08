@@ -45,12 +45,6 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/apps/einkauf-api"],
-          "dependsOn": [
-            {
-              "target": "setup-test-environment",
-              "projects": "self"
-            }
-          ],
           "options": {
             "jestConfig": "apps/einkauf-api/jest.config.js",
             "passWithNoTests": true
@@ -68,13 +62,6 @@
             "commands": [
               "cd tools && docker-compose up -f docker-compose.testing.yml -d "
             ]
-          },
-          "configurations": {
-            "watch": {
-              "commands": [
-                "cd tools && docker-compose -f docker-compose.testing.yml up -d "
-              ]
-            }
           }
         }
       },

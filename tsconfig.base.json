@@ -15,12 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@jk/typeorm-testing-nest": [
-        "libs/typeorm-testing-nest/src/index.ts"
-      ],
       "@jk/components": ["libs/jk-comps/src/index.ts"],
       "@jk/components/button": ["libs/jk-comps/button/src/index.ts"],
-      "@jk/components/input": ["libs/jk-comps/input/src/index.ts"]
+      "@jk/components/input": ["libs/jk-comps/input/src/index.ts"],
+      "@jk/typeorm-testing-nest": ["libs/typeorm-testing-nest/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

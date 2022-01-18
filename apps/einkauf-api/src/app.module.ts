@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
-
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { getMetadataArgsStorage } from 'typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersModule } from '../users/users.module';
-import { AuthModule } from '../auth/auth.module';
-import { ConfigModule, ConfigService } from '@nestjs/config';
-import { getMetadataArgsStorage } from 'typeorm';
+import { AuthModule } from './auth/auth.module';
+import { HomesModule } from './homes/homes.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -29,6 +29,7 @@ import { getMetadataArgsStorage } from 'typeorm';
     }),
     UsersModule,
     AuthModule,
+    HomesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

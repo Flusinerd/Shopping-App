@@ -1,0 +1,12 @@
+:host {
+  position: relative;
+}
+
+.striked {
+  text-decoration: line-through;
+}
+
+img.striked {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}

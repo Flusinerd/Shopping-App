@@ -1,0 +1,17 @@
+<ion-item>
+  <ion-thumbnail slot="start">
+    <img [src]="item.imageUrl" [class.striked]="isStriked" />
+  </ion-thumbnail>
+
+  <ion-label
+    [class.striked]="isStriked"
+    [color]="isStriked ? 'medium' : undefined"
+    >{{ item.name }}</ion-label
+  >
+  <ion-label
+    slot="end"
+    [class.striked]="isStriked"
+    [color]="isStriked ? 'medium' : undefined"
+    >{{ item.targetAmount }} {{ item.unit }}
+  </ion-label>
+</ion-item>

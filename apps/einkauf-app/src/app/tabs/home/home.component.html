@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h3 class="ion-padding-start">Benachrichtigungen</h3>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label> You are running low on milk </ion-label>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger"> Delete </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h3 class="ion-padding-start">Kochideen</h3>
+  <div class="ion-padding-start ion-padding-end">
+    <swiper [slidesPerView]="2">
+      <ng-template swiperSlide>
+        <app-recipe-slide
+          thumbnailUrl="https://img.chefkoch-cdn.de/rezepte/310711112267058/bilder/922434/crop-600x400/brathaehnchen-omas-art.jpg"
+          title="Brathähnchen Omas Art"
+        ></app-recipe-slide>
+      </ng-template>
+      <ng-template swiperSlide>
+        <app-recipe-slide
+          thumbnailUrl="https://api.chefkoch.de/v2/recipes/2647481415993295/images/745953/crop-420x280"
+          title="Feuertopf"
+        ></app-recipe-slide>
+      </ng-template>
+      <ng-template swiperSlide>
+        <app-recipe-slide
+          thumbnailUrl="https://api.chefkoch.de/v2/recipes/2585571405806117/images/1101054/crop-420x280"
+          title="Räucherforellen mit Meerrettichrahm und Kartoffeln"
+        ></app-recipe-slide>
+      </ng-template>
+      <ng-template swiperSlide>
+        <app-recipe-slide
+          thumbnailUrl="https://api.chefkoch.de/v2/recipes/2662441418063325/images/1318190/crop-420x280"
+          title="Orientalisch gefüllte Tomaten"
+        ></app-recipe-slide>
+      </ng-template>
+    </swiper>
+  </div>
+</ion-content>

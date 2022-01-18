@@ -1,0 +1,50 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="primary" collapse="true">
+      <ion-button>Alle anzeigen</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+      <ion-buttons slot="primary">
+        <ion-button>Alle anzeigen</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <app-grocery-item [item]="item"></app-grocery-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="onItemDeleted(item)">
+          Löschen
+        </ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="start">
+        <ion-item-option
+          color="success"
+          (click)="toggleItemState(item)"
+          *ngIf="item.state === 'incomplete'"
+        >
+          Abhaken
+        </ion-item-option>
+        <ion-item-option
+          color="primary"
+          (click)="toggleItemState(item)"
+          *ngIf="item.state === 'complete'"
+        >
+          Rückgängig
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

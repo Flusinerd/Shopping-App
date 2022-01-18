@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  // background-color: var(--ion-card-background);
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 20vw !important;
+  height: 20vw !important;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+p {
+  margin: 0;
+}

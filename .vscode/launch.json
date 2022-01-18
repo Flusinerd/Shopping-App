@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Debug Nest Framework",
+      "args": ["${workspaceFolder}/apps/language-dev/src/main.ts"],
+      "runtimeArgs": [
+        "--nolazy",
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register"
+      ],
+      "sourceMaps": true,
+      "cwd": "${workspaceRoot}/apps/language-dev/",
+      "internalConsoleOptions": "openOnSessionStart",
+      "protocol": "inspector",
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/apps/language-dev/tsconfig.app.json"
+      },
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    }
+  ]
+}

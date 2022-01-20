@@ -12,5 +12,5 @@ for (const jkFile of jkFiles) {
     fs.readFileSync(path.join(__dirname, 'assets', jkFile.base), 'utf8')
   );
 
-  const parser = new Parser(lexer);
+  new Parser(lexer);
 }

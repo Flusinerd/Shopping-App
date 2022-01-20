@@ -7,5 +7,5 @@ export abstract class Literal {
     this.Token = token;
   }
 
-  abstract evaluate(): any;
+  abstract evaluate(): never;
 }

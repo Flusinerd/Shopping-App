@@ -1,4 +1,4 @@
-<ion-item>
+<ion-item *ngIf="item">
   <ion-thumbnail slot="start">
     <img [src]="item.imageUrl" [class.striked]="isStriked" />
   </ion-thumbnail>

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { IonicModule } from '@ionic/angular';
 import { RecipeSlideComponent } from './recipe-slide.component';
 
 describe('RecipeSlideComponent', () => {
@@ -8,9 +8,9 @@ describe('RecipeSlideComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RecipeSlideComponent ]
-    })
-    .compileComponents();
+      declarations: [RecipeSlideComponent],
+      imports: [IonicModule.forRoot()],
+    }).compileComponents();
   });
 
   beforeEach(() => {

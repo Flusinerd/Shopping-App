@@ -20,15 +20,15 @@ export type GroceryItemWithState = GroceryItem & { state: GroceryItemState };
   styleUrls: ['./grocery-item.component.scss'],
 })
 export class GroceryItemComponent {
-  private _item: GroceryItemWithState;
+  private _item?: GroceryItemWithState;
 
   @Input()
-  set item(item: GroceryItemWithState) {
+  set item(item: GroceryItemWithState | undefined) {
     this._item = item;
     this.isStriked = this.item?.state === 'complete';
   }
 
-  get item(): GroceryItemWithState {
+  get item(): GroceryItemWithState | undefined {
     return this._item;
   }
 

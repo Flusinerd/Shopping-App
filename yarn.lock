@@ -298,7 +298,7 @@
     ora "5.4.1"
     rxjs "6.6.7"
 
-"@angular-eslint/builder@~13.0.1":
+"@angular-eslint/builder@13.0.1":
   version "13.0.1"
   resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-13.0.1.tgz#568bf7df41b7ff4fcf51d2d2188b372da6152bcd"
   integrity sha512-z43jUpA4xm767ze/yWwvoy5PdvSe57DAvXHlHywv0iYxXl1OhytPIA0CdOA3ZWkbSWWVmWmFzELeYfGnE3+igg==
@@ -2252,7 +2252,7 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@ionic/angular-toolkit@^5.0.0":
+"@ionic/angular-toolkit@5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@ionic/angular-toolkit/-/angular-toolkit-5.0.3.tgz#9521246db4e5f1628a8e89a4c7af8f8fbcd6ec89"
   integrity sha512-xHVvB0FPkvzQ52B74EN8g0IhMj+rPl7oAMAd89P0ajlV3bvRfFyDimgx7HJDhl99qf9a7EhxjB65Yf6M/b1tnw==
@@ -2269,7 +2269,7 @@
     tslib "^2.0.3"
     ws "^7.0.1"
 
-"@ionic/angular@^6.0.0":
+"@ionic/angular@6.0.2":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.0.2.tgz#9b0ca204c7a42b6b8842f616402aef24a866a80d"
   integrity sha512-uXORAswizjDEWFAzkng9sT3CIRY+0+D6Cj0IaYOquHIGeUsnPACKoitVPoyF1JxCeooJb8W4pyvEd8zWFfptYw==
@@ -17124,7 +17124,7 @@ swagger-ui-express@4.3.0:
   dependencies:
     swagger-ui-dist ">=4.1.3"
 
-swiper@^7.4.1:
+swiper@7.4.1:
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.4.1.tgz#99fc586d1335b45250d2c6b3128dc91f8047d3e7"
   integrity sha512-dhbL4tpYFvHug1J7GnKElfTi6EYhlZy/vNZRhHkWFyUsWZ1Vovipxj3la5gqllMogygXJMe3zvVv+f6eppvWiA==

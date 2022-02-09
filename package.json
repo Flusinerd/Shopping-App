@@ -64,7 +64,7 @@
     "@angular/language-service": "13.2.2",
     "@capacitor/cli": "3.4.0",
     "@ionic/angular-toolkit": "5.0.3",
-    "@nestjs/schematics": "8.0.5",
+    "@nestjs/schematics": "8.0.6",
     "@nestjs/testing": "8.2.6",
     "@nrwl/cli": "13.8.0",
     "@nrwl/cypress": "13.8.0",

@@ -2054,15 +2054,15 @@
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.4.1.tgz#0ae173056924294aa1e468b70377d603abea790e"
   integrity sha512-ycFCyKI8DsgedVg7PW5MpCVgqFuD0PMHQGVfC5ichXc2C/jAATX32EVdEMCB0N3guKoH2k6T3Efwg59+Fcdx2w==
 
-"@capacitor/keyboard@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-1.2.1.tgz#ff5550aa4c0a3a7a4127e303bf4f0281fbe002cb"
-  integrity sha512-wNBzVFQ5OSXJ+V4AaExG3KcpfWoDZYLi9DgxsOqEPx58TebWCWAaLvmbbtByQMkfTMElc3AKeHb1H5z8cVtl4A==
+"@capacitor/keyboard@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-1.2.2.tgz#7be5d2e4956b77e5eb7235ec020d131c9f87f30a"
+  integrity sha512-dOZSXJTY/tTbRQ+Neiny72BIXN2Hvf/2AgPpMdTErDfaQM7C2MMgtJrm+Mi+YUeT6AnJFmt68nHJGImAL4lzmA==
 
-"@capacitor/status-bar@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-1.0.7.tgz#98d5758f3db12fbb3d5bf895a01d7de903dd6129"
-  integrity sha512-Z4flqIGCeVDQ/IwFZEjHS0uLun2r70CG+6bs24ENKsSnirXFXvmzDOY60qff9eywP6pNLYqgcSaznnQ0eIu3Vw==
+"@capacitor/status-bar@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-1.0.8.tgz#a783561fb5815b30f3e75dd95c87e00aaff5450b"
+  integrity sha512-lhxa70K6vg0QjdddbT9RqFLfQ9a0Fk1OVE54MhUH30DWymv4h2LrC+mJgH6JS46WQbR2UCHRymfmVCq1PS2Qiw==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"

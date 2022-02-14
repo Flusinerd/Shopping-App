@@ -30,7 +30,7 @@
     "@hippo-oss/nest-dto": "0.18.0",
     "@ionic/angular": "6.0.7",
     "@nestjs/common": "8.3.0",
-    "@nestjs/config": "1.1.7",
+    "@nestjs/config": "1.2.0",
     "@nestjs/core": "8.3.0",
     "@nestjs/passport": "8.1.0",
     "@nestjs/platform-express": "8.3.0",

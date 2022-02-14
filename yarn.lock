@@ -2872,12 +2872,12 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/common@8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.2.6.tgz#34cd5cc44082d3525c56c95db42ca0e5277b7d85"
-  integrity sha512-flLYSXunxcKyjbYddrhwbc49uE705MxBt85rS3mHyhDbAIPSGGeZEqME44YyAzCg1NTfJSNe7ztmOce5kNkb9A==
+"@nestjs/common@8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.3.0.tgz#460e23a188bb56aa6774868b68aa9247dfd97bdb"
+  integrity sha512-WWH1WCwiGDY7XRfJrYFSIKd+vmaDDtQfQlUw3FpzjLMNRF2301Mfz7aFTlbTrl0bvJEyTxOejopWcr/xeudkkw==
   dependencies:
-    axios "0.24.0"
+    axios "0.26.0"
     iterare "1.2.1"
     tslib "2.3.1"
     uuid "8.3.2"
@@ -2892,10 +2892,10 @@
     lodash "4.17.21"
     uuid "8.3.2"
 
-"@nestjs/core@8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.2.6.tgz#08eb38203fb01a828227ea25972d38bfef5c818f"
-  integrity sha512-NwPcEIMmCsucs3QaDlQvkoU1FlFM2wm/WjaqLQhkSoIEmAR1gNtBo88f5io5cpMwCo1k5xYhqGlaSl6TfngwWQ==
+"@nestjs/core@8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.3.0.tgz#37743498bd5a1f2dd76fd33f563379a7113be815"
+  integrity sha512-C6m0hBIKg+xRcZYFDAGkMkZt1izQ7S42LYRyZPoWMO7/tEtW+yEPaUQtqG9CxxeG0wHjgzZ17iNeuxse4KfeIA==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
@@ -2915,10 +2915,10 @@
   resolved "https://registry.yarnpkg.com/@nestjs/passport/-/passport-8.1.0.tgz#ba3b28803666bf2afc644f82979585a886f353ed"
   integrity sha512-IJ0AumoIWPzzki8d1TixTLcWJiNhJxzpn9ejAYA0TaKsC2B1zyg58WotTU3U/perCOiiAgjpvTB4vA/7L8K9Mg==
 
-"@nestjs/platform-express@8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.2.6.tgz#48ab8741776dbb7dd5204a401151bf21e06bb503"
-  integrity sha512-wbPqXrLdeokfMCHkWBHgFobCVL4OKRAOJIFGNlT/3u4JIJndoGBIuSDQohhY2o7Ue0JIYqKw+PyXiN4y/iUEng==
+"@nestjs/platform-express@8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.3.0.tgz#debf88cc11f8735261134f0a360d3805170f79cc"
+  integrity sha512-IH9bOkdUq5bcyDeu1D0GCFxNokQ989vv9mKh8q8UZ/Tu2k9E+gIVfHGt8Nrw975jwQnbiio2whIdPkkdF/2Y1Q==
   dependencies:
     body-parser "1.19.1"
     cors "2.8.5"
@@ -2957,10 +2957,10 @@
     lodash "4.17.21"
     path-to-regexp "3.2.0"
 
-"@nestjs/testing@8.2.6":
-  version "8.2.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-8.2.6.tgz#a0677d6b2e774cc805f6fa9e46a74584ca82d8f9"
-  integrity sha512-Cg8tM7yxlLDBO+CTNjk6X/UkxGRsprFc8gDHGEGesiE9wLErxNnslFugfUnYWJaSzmLZSqcFFig7mThc8VSxrw==
+"@nestjs/testing@8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-8.3.0.tgz#318984faa09f4a599e37c605b2c49684a8dc6063"
+  integrity sha512-ezfzkhCyYCPaMnZlSG7sV3PTnLNrP/SxblOCONRYaGvcm23QDoW5FI2KTRtiDb4fZX5CRQZTRxLCrFUABeAz+Q==
   dependencies:
     optional "0.1.4"
     tslib "2.3.1"
@@ -6082,12 +6082,12 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
-  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
+axios@0.26.0:
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.0.tgz#9a318f1c69ec108f8cd5f3c3d390366635e13928"
+  integrity sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==
   dependencies:
-    follow-redirects "^1.14.4"
+    follow-redirects "^1.14.8"
 
 axios@^0.21.1:
   version "0.21.4"
@@ -9886,10 +9886,15 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.14.4:
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
   version "1.14.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
   integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
+
+follow-redirects@^1.14.8:
+  version "1.14.8"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.8.tgz#016996fb9a11a100566398b1c6839337d7bfa8fc"
+  integrity sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==
 
 for-in@^1.0.2:
   version "1.0.2"

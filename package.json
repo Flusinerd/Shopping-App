@@ -21,7 +21,7 @@
     "@angular/platform-browser": "13.2.5",
     "@angular/platform-browser-dynamic": "13.2.5",
     "@angular/router": "13.2.5",
-    "@capacitor/app": "1.1.0",
+    "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.4.2",
     "@capacitor/haptics": "1.1.4",
     "@capacitor/ios": "3.4.2",

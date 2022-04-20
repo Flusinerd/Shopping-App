@@ -28,7 +28,7 @@
     "@capacitor/keyboard": "1.2.2",
     "@capacitor/status-bar": "1.0.8",
     "@hippo-oss/nest-dto": "0.19.0",
-    "@ionic/angular": "6.1.1",
+    "@ionic/angular": "6.1.2",
     "@nestjs/common": "8.4.4",
     "@nestjs/config": "2.0.0",
     "@nestjs/core": "8.4.4",

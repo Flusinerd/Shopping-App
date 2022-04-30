@@ -96,7 +96,7 @@
     "jest": "27.5.1",
     "jest-preset-angular": "11.1.2",
     "ng-packagr": "13.3.1",
-    "postcss": "8.4.12",
+    "postcss": "8.4.13",
     "postcss-import": "14.1.0",
     "postcss-preset-env": "7.4.4",
     "postcss-url": "10.1.3",

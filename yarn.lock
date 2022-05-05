@@ -2768,14 +2768,14 @@
     multer "1.4.4"
     tslib "2.3.1"
 
-"@nestjs/schematics@8.0.10":
-  version "8.0.10"
-  resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-8.0.10.tgz#4f951ea1ac94721ba6a6ccfae6461f8b22949573"
-  integrity sha512-gQq/8TYjtgum+5+QuPfHHKgKxDgNLGh8mH+EJ1skOKX+GTxgt5jmg1GFmwEfiOXZUcF9thT6GsOVNKWrdO3YMg==
+"@nestjs/schematics@8.0.11":
+  version "8.0.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-8.0.11.tgz#5d0c56184826660a2c01b1c326dbdbb12880e864"
+  integrity sha512-W/WzaxgH5aE01AiIErE9QrQJ73VR/M/8p8pq0LZmjmNcjZqU5kQyOWUxZg13WYfSpJdOa62t6TZRtFDmgZPoIg==
   dependencies:
-    "@angular-devkit/core" "13.3.2"
-    "@angular-devkit/schematics" "13.3.2"
-    fs-extra "10.0.1"
+    "@angular-devkit/core" "13.3.5"
+    "@angular-devkit/schematics" "13.3.5"
+    fs-extra "10.1.0"
     jsonc-parser "3.0.0"
     pluralize "8.0.0"
 
@@ -9567,10 +9567,10 @@ fs-extra@10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.1.tgz#27de43b4320e833f6867cc044bfce29fdf0ef3b8"
-  integrity sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==
+fs-extra@10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
+  integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"

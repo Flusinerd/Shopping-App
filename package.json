@@ -88,7 +88,7 @@
     "@types/passport-local": "1.0.34",
     "@typescript-eslint/eslint-plugin": "5.23.0",
     "@typescript-eslint/parser": "5.23.0",
-    "better-sqlite3": "7.5.2",
+    "better-sqlite3": "7.5.3",
     "cypress": "9.6.1",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",

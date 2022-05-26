@@ -2078,10 +2078,10 @@
   resolved "https://registry.yarnpkg.com/@hippo-oss/dto-decorators/-/dto-decorators-0.4.1.tgz#0f44ecfc87bf33dad431da483f5724d2243aa0fd"
   integrity sha512-As552HXjj8134muj9bsGiEwdZjfaZipbeULrIq1Ay4xDgN8qtcfkucBrBCObToy1nTuY29saDH2L2M3XBpKGWg==
 
-"@hippo-oss/nest-dto@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@hippo-oss/nest-dto/-/nest-dto-1.1.0.tgz#b3c25c5b1c4bc9ffad2dc021d225001893fdf854"
-  integrity sha512-rUCczTsIAGbteTzrislk2EbBIJCCq/HK3c0Pbo5+U6VyRyOUcq3dCJKFV7/zK2XI4PA2u+3ucaKE7F6gk07ISA==
+"@hippo-oss/nest-dto@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@hippo-oss/nest-dto/-/nest-dto-1.1.1.tgz#6444594f53a9a4a89498a4b4baf78c5531bb534c"
+  integrity sha512-HrqhU6x9I06rMTqFPnq5HB2kyB6aKuY/tffDn9GL9WBXAgki7Njd8g5vpc9OAF4dHHODvR5sqJDqSp1QEcQx6Q==
   dependencies:
     "@hippo-oss/class-decorators" ">=0.5.0"
     "@hippo-oss/dto-decorators" ">=0.4.1"

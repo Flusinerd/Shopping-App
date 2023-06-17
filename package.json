@@ -49,7 +49,7 @@
     "rxjs": "7.8.1",
     "swagger-ui-express": "4.6.3",
     "swiper": "8.4.7",
-    "tslib": "2.5.0",
+    "tslib": "2.5.3",
     "typeorm": "0.3.15",
     "zone.js": "0.13.0"
   },

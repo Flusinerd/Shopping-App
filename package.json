@@ -25,7 +25,7 @@
     "@capacitor/core": "3.9.0",
     "@capacitor/haptics": "1.1.4",
     "@capacitor/ios": "3.9.0",
-    "@capacitor/keyboard": "1.2.3",
+    "@capacitor/keyboard": "5.0.5",
     "@capacitor/status-bar": "1.0.8",
     "@hippo-oss/nest-dto": "1.1.1",
     "@ionic/angular": "6.7.5",

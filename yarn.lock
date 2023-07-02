@@ -1887,10 +1887,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@capacitor/haptics@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-1.1.4.tgz#80d5bc4776740a227a8cb83c85fac4db1316db8e"
-  integrity sha512-+pJIb5X7xAcbrWj6rJaV+cwBlv8aFwB1/Ob6EV4atydThuuVSSsAL4hI4ZYlPNOxM6H5s+ZDLj7Pa2os4eFmtg==
+"@capacitor/haptics@5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-5.0.5.tgz#f9fb4e5e0c3aadadeae6f46428e7de4256f3d826"
+  integrity sha512-iDgmCehrdc0Sdob/y3KjAX0sll/y9PTP6hJubwTpIpRt3kOKGDhMMNkUGRKm6myTIRPpa2Mm8jWCSYaA4pPq4g==
 
 "@capacitor/ios@3.9.0":
   version "3.9.0"
